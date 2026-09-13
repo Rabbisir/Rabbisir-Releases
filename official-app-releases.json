@@ -2,18 +2,82 @@
   "$schema": "./official-app-releases.schema.json",
   "schemaVersion": 2,
   "channel": "production",
-  "updatedAt": "2026-09-05T00:00:00Z",
+  "updatedAt": "2026-09-13T00:00:00Z",
   "authority": {
     "repository": "readysteadyscience/Rabbisir-Releases",
     "appcastURL": "https://raw.githubusercontent.com/readysteadyscience/Rabbisir-Releases/main/appcast.xml",
     "stableDownloadURL": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/latest/download/Rabbisir.dmg"
   },
   "latest": {
-    "version": "0.3.6",
-    "build": "14",
-    "tag": "v0.3.6"
+    "version": "0.4.7",
+    "build": "15",
+    "tag": "v0.4.7"
   },
   "releases": [
+    {
+      "version": "0.4.7",
+      "build": "15",
+      "tag": "v0.4.7",
+      "publishedOn": "2026-09-13",
+      "selectedTypes": [
+        "feature",
+        "optimization",
+        "fix"
+      ],
+      "categories": {
+        "feature": [
+          {
+            "zh": "新增稳定项目注册、托管/关联项目、安全迁移、三态项目坞与项目内新建会话入口。",
+            "en": "Adds stable project registration, managed and linked projects, safe migration, a three-state project dock, and project-scoped session creation."
+          },
+          {
+            "zh": "新增四类原生文档工作台、系统分享、持久终端，以及多文件审阅、逐文件 Keep/Undo 和语义历史。",
+            "en": "Adds four native document workbenches, system sharing, a persistent terminal, and multi-file review with per-file Keep/Undo and semantic history."
+          }
+        ],
+        "optimization": [
+          {
+            "zh": "优化更新探测的单飞与冷却机制，并提升非激活状态下的更新提示可靠性。",
+            "en": "Improves update-probe single-flight and cooldown behavior, including reliable update visibility while Rabbisir is inactive."
+          },
+          {
+            "zh": "优化面板交互、文档安全读取与长文档呈现，以及运行态、终态和产物事件的幂等收敛。",
+            "en": "Improves panel interaction, secure document routing and long-document rendering, plus idempotent runtime, terminal-state, and artifact projection."
+          }
+        ],
+        "fix": [
+          {
+            "zh": "修复升级后会话权限恢复、消息草稿、任务终态与重复产物状态错误。",
+            "en": "Fixes post-upgrade session and permission recovery, message-draft behavior, terminal task states, and duplicate artifact state."
+          },
+          {
+            "zh": "修复文档路由与版式、玻璃面板命中和选中状态，以及终端输出顺序、退出结果与后台后代残留。",
+            "en": "Fixes document routing and layout, glass-panel hit testing and selection, terminal output order, exit results, and lingering child processes."
+          }
+        ]
+      },
+      "releaseURL": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/tag/v0.4.7",
+      "assets": [
+        {
+          "name": "Rabbisir-0.4.7-15.zip",
+          "url": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.4.7/Rabbisir-0.4.7-15.zip",
+          "size": 136212829,
+          "sha256": "2db7fc958d2dc30806599ee6a2a97ea1f98c30e817298c9486a1f84acd94b749"
+        },
+        {
+          "name": "Rabbisir-0.4.7-15.dmg",
+          "url": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.4.7/Rabbisir-0.4.7-15.dmg",
+          "size": 99020653,
+          "sha256": "a4cbc2268b45fa67d7d9889a0236edcdb38ac2318994f67bbdc1202c3814f7dd"
+        },
+        {
+          "name": "Rabbisir.dmg",
+          "url": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/download/v0.4.7/Rabbisir.dmg",
+          "size": 99020653,
+          "sha256": "a4cbc2268b45fa67d7d9889a0236edcdb38ac2318994f67bbdc1202c3814f7dd"
+        }
+      ]
+    },
     {
       "version": "0.3.6",
       "build": "14",
