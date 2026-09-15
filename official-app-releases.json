@@ -2,18 +2,78 @@
   "$schema": "./official-app-releases.schema.json",
   "schemaVersion": 2,
   "channel": "production",
-  "updatedAt": "2026-09-13T00:00:00Z",
+  "updatedAt": "2026-09-15T00:00:00Z",
   "authority": {
-    "repository": "readysteadyscience/Rabbisir-Releases",
-    "appcastURL": "https://raw.githubusercontent.com/readysteadyscience/Rabbisir-Releases/main/appcast.xml",
-    "stableDownloadURL": "https://github.com/readysteadyscience/Rabbisir-Releases/releases/latest/download/Rabbisir.dmg"
+    "repository": "Rabbisir/Rabbisir-Releases",
+    "appcastURL": "https://raw.githubusercontent.com/Rabbisir/Rabbisir-Releases/main/appcast.xml",
+    "stableDownloadURL": "https://github.com/Rabbisir/Rabbisir-Releases/releases/latest/download/Rabbisir.dmg"
   },
   "latest": {
-    "version": "0.4.7",
-    "build": "15",
-    "tag": "v0.4.7"
+    "version": "0.5.8",
+    "build": "16",
+    "tag": "v0.5.8"
   },
   "releases": [
+    {
+      "version": "0.5.8",
+      "build": "16",
+      "tag": "v0.5.8",
+      "publishedOn": "2026-09-15",
+      "selectedTypes": [
+        "feature",
+        "optimization",
+        "fix"
+      ],
+      "categories": {
+        "feature": [
+          {
+            "zh": "新增原生菜单栏 Rabbit，可 Command 拖拽定位、连续转向，并以 Rabbit 为边界收纳或恢复左侧菜单项。",
+            "en": "Adds a native menu-bar Rabbit with Command-drag positioning, continuous turning, and Rabbit-bound left-side menu collapse and restore."
+          }
+        ],
+        "optimization": [
+          {
+            "zh": "运行时来源校验改为受控并发，打包校验由 9.909 秒降至 2.923 秒，启动可交互中位数由 8762 毫秒降至 4553 毫秒。",
+            "en": "Uses bounded concurrency for runtime provenance checks, cutting packaged verification from 9.909s to 2.923s and median interactive startup from 8762ms to 4553ms."
+          },
+          {
+            "zh": "菜单栏点击、快速反转、屏幕变化、重启和拖拽统一为幂等状态收敛。",
+            "en": "Makes menu clicks, rapid reversals, screen changes, restarts, and dragging converge idempotently."
+          }
+        ],
+        "fix": [
+          {
+            "zh": "修复展开抽屉底部深色凸块、首帧跳变，以及项目坞陈旧离开事件导致的收放异常。",
+            "en": "Fixes the expanded drawer dark lower protrusion, first-frame jump, and dock expansion errors caused by stale pointer-exit events."
+          },
+          {
+            "zh": "修复菜单栏收纳后自动再次展开，并移除点击时出现的屏幕跨度深色长条。",
+            "en": "Fixes unintended re-expansion after menu collapse and removes the screen-spanning dark bar shown on click."
+          }
+        ]
+      },
+      "releaseURL": "https://github.com/Rabbisir/Rabbisir-Releases/releases/tag/v0.5.8",
+      "assets": [
+        {
+          "name": "Rabbisir-0.5.8-16.zip",
+          "url": "https://github.com/Rabbisir/Rabbisir-Releases/releases/download/v0.5.8/Rabbisir-0.5.8-16.zip",
+          "size": 136551266,
+          "sha256": "8a539b7b921e49cfea0b90c0c22486a03ea189ebb53d6212e3dda859c5452c1a"
+        },
+        {
+          "name": "Rabbisir-0.5.8-16.dmg",
+          "url": "https://github.com/Rabbisir/Rabbisir-Releases/releases/download/v0.5.8/Rabbisir-0.5.8-16.dmg",
+          "size": 99406317,
+          "sha256": "4118343ae62951dfc2348f179d9a6a7478bd73a8bf3249e0eed33ad7f687cf24"
+        },
+        {
+          "name": "Rabbisir.dmg",
+          "url": "https://github.com/Rabbisir/Rabbisir-Releases/releases/download/v0.5.8/Rabbisir.dmg",
+          "size": 99406317,
+          "sha256": "4118343ae62951dfc2348f179d9a6a7478bd73a8bf3249e0eed33ad7f687cf24"
+        }
+      ]
+    },
     {
       "version": "0.4.7",
       "build": "15",
