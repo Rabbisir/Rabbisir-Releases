@@ -9,11 +9,60 @@
     "stableDownloadURL": "https://github.com/Rabbisir/Rabbisir-Releases/releases/latest/download/Rabbisir.dmg"
   },
   "latest": {
-    "version": "0.5.8",
-    "build": "16",
-    "tag": "v0.5.8"
+    "version": "0.5.9",
+    "build": "17",
+    "tag": "v0.5.9"
   },
   "releases": [
+    {
+      "version": "0.5.9",
+      "build": "17",
+      "tag": "v0.5.9",
+      "publishedOn": "2026-09-15",
+      "selectedTypes": [
+        "optimization",
+        "fix"
+      ],
+      "categories": {
+        "optimization": [
+          {
+            "zh": "增强正式包隔离验收，临时数据根、运行时环境与 Keychain 命名空间不会读取用户的真实数据。",
+            "en": "Strengthens isolated Production acceptance so temporary data roots, runtime state, and Keychain namespaces do not read real user data."
+          }
+        ],
+        "fix": [
+          {
+            "zh": "修复打包 App 进入项目坞资源路径时因核心资源 Bundle 初始化失败而崩溃。",
+            "en": "Fixes a packaged-App crash caused by core resource Bundle initialization when entering project-dock resource paths."
+          },
+          {
+            "zh": "修复生肖资源缺失或损坏时项目坞和原生菜单图标不可用，现会安全回退至 SF Symbol。",
+            "en": "Fixes unavailable dock and native-menu icons when zodiac assets are missing or damaged by safely falling back to SF Symbols."
+          }
+        ]
+      },
+      "releaseURL": "https://github.com/Rabbisir/Rabbisir-Releases/releases/tag/v0.5.9",
+      "assets": [
+        {
+          "name": "Rabbisir-0.5.9-17.zip",
+          "url": "https://github.com/Rabbisir/Rabbisir-Releases/releases/download/v0.5.9/Rabbisir-0.5.9-17.zip",
+          "size": 136552748,
+          "sha256": "dc20affadd0a36322e977ba73df58c378bb635ae89b84d6aff5b33b50e46bcfd"
+        },
+        {
+          "name": "Rabbisir-0.5.9-17.dmg",
+          "url": "https://github.com/Rabbisir/Rabbisir-Releases/releases/download/v0.5.9/Rabbisir-0.5.9-17.dmg",
+          "size": 99401229,
+          "sha256": "28547fecc265f1324f16bcdbf60b69ea0468ad6779d9758a97832b5344c274e3"
+        },
+        {
+          "name": "Rabbisir.dmg",
+          "url": "https://github.com/Rabbisir/Rabbisir-Releases/releases/download/v0.5.9/Rabbisir.dmg",
+          "size": 99401229,
+          "sha256": "28547fecc265f1324f16bcdbf60b69ea0468ad6779d9758a97832b5344c274e3"
+        }
+      ]
+    },
     {
       "version": "0.5.8",
       "build": "16",
