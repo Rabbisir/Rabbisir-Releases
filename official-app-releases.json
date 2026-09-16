@@ -2,18 +2,82 @@
   "$schema": "./official-app-releases.schema.json",
   "schemaVersion": 2,
   "channel": "production",
-  "updatedAt": "2026-09-15T00:00:00Z",
+  "updatedAt": "2026-09-16T00:00:00Z",
   "authority": {
     "repository": "Rabbisir/Rabbisir-Releases",
     "appcastURL": "https://raw.githubusercontent.com/Rabbisir/Rabbisir-Releases/main/appcast.xml",
     "stableDownloadURL": "https://github.com/Rabbisir/Rabbisir-Releases/releases/latest/download/Rabbisir.dmg"
   },
   "latest": {
-    "version": "0.5.9",
-    "build": "17",
-    "tag": "v0.5.9"
+    "version": "0.6.10",
+    "build": "18",
+    "tag": "v0.6.10"
   },
   "releases": [
+    {
+      "version": "0.6.10",
+      "build": "18",
+      "tag": "v0.6.10",
+      "publishedOn": "2026-09-16",
+      "selectedTypes": [
+        "feature",
+        "optimization",
+        "fix"
+      ],
+      "categories": {
+        "feature": [
+          {
+            "zh": "新增应用内反馈工作区，支持私密草稿、附件、预览、提交、恢复以及公开问题与修复状态跟踪。",
+            "en": "Adds an in-app feedback workspace for private drafts, attachments, preview, submission, recovery, and public issue or fix-status tracking."
+          },
+          {
+            "zh": "项目菜单新增“新建项目空间”“添加项目空间”以及独立的“合并项目”入口。",
+            "en": "Adds distinct project-menu actions to create, add, or merge project spaces."
+          }
+        ],
+        "optimization": [
+          {
+            "zh": "增强反馈提交在超时、断线、取消、重启及配置缺失时的幂等恢复，避免重复提交。",
+            "en": "Improves idempotent feedback recovery across timeouts, disconnects, cancellation, relaunch, and missing configuration without duplicate posts."
+          },
+          {
+            "zh": "强化反馈文件与项目目录的身份、权限及符号链接边界校验，提升文件处理安全性。",
+            "en": "Strengthens identity, permission, and symlink-boundary checks for feedback files and project directories."
+          }
+        ],
+        "fix": [
+          {
+            "zh": "修复在保存面板中新建目录后创建项目空间可能无响应或发生重复建目录冲突。",
+            "en": "Fixes project-space creation hanging or attempting a second mkdir after creating a folder in the save panel."
+          },
+          {
+            "zh": "修复项目入口语义错误，以及反馈恢复、取消、清理和发布状态持久化中的竞态问题。",
+            "en": "Fixes incorrect project-entry semantics and races in feedback recovery, cancellation, cleanup, and released-state persistence."
+          }
+        ]
+      },
+      "releaseURL": "https://github.com/Rabbisir/Rabbisir-Releases/releases/tag/v0.6.10",
+      "assets": [
+        {
+          "name": "Rabbisir-0.6.10-18.zip",
+          "url": "https://github.com/Rabbisir/Rabbisir-Releases/releases/download/v0.6.10/Rabbisir-0.6.10-18.zip",
+          "size": 137139892,
+          "sha256": "8eb5e1c4c12c8b90842d4ae6045f70c7a53e60911c6af4e2cef5ac61bebd0c39"
+        },
+        {
+          "name": "Rabbisir-0.6.10-18.dmg",
+          "url": "https://github.com/Rabbisir/Rabbisir-Releases/releases/download/v0.6.10/Rabbisir-0.6.10-18.dmg",
+          "size": 99978624,
+          "sha256": "cac3d624448fd13a66cddb4698c675685a1c3e46c21a566b7dd8af9cf60a9eb3"
+        },
+        {
+          "name": "Rabbisir.dmg",
+          "url": "https://github.com/Rabbisir/Rabbisir-Releases/releases/download/v0.6.10/Rabbisir.dmg",
+          "size": 99978624,
+          "sha256": "cac3d624448fd13a66cddb4698c675685a1c3e46c21a566b7dd8af9cf60a9eb3"
+        }
+      ]
+    },
     {
       "version": "0.5.9",
       "build": "17",
