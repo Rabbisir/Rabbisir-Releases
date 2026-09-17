@@ -2,18 +2,63 @@
   "$schema": "./official-app-releases.schema.json",
   "schemaVersion": 2,
   "channel": "production",
-  "updatedAt": "2026-09-16T00:00:00Z",
+  "updatedAt": "2026-09-17T00:00:00Z",
   "authority": {
     "repository": "Rabbisir/Rabbisir-Releases",
     "appcastURL": "https://raw.githubusercontent.com/Rabbisir/Rabbisir-Releases/main/appcast.xml",
     "stableDownloadURL": "https://github.com/Rabbisir/Rabbisir-Releases/releases/latest/download/Rabbisir.dmg"
   },
   "latest": {
-    "version": "0.6.10",
-    "build": "18",
-    "tag": "v0.6.10"
+    "version": "0.6.11",
+    "build": "19",
+    "tag": "v0.6.11"
   },
   "releases": [
+    {
+      "version": "0.6.11",
+      "build": "19",
+      "tag": "v0.6.11",
+      "publishedOn": "2026-09-17",
+      "selectedTypes": [
+        "optimization",
+        "fix"
+      ],
+      "categories": {
+        "optimization": [
+          {
+            "zh": "将模型目录对齐到 DeepSeek V4.1 Flash 与 V4 Pro，并准确展示文本、图片、推理和工具能力。",
+            "en": "Aligns the model catalog with DeepSeek V4.1 Flash and V4 Pro and accurately presents text, image, reasoning, and tool capabilities."
+          }
+        ],
+        "fix": [
+          {
+            "zh": "修复旧 Flash 模型模糊匹配、退役模型误入新选择，以及图片请求泄露本地路径的风险。",
+            "en": "Fixes fuzzy legacy Flash matching, retired models appearing in new selections, and the risk of local paths entering image requests."
+          }
+        ]
+      },
+      "releaseURL": "https://github.com/Rabbisir/Rabbisir-Releases/releases/tag/v0.6.11",
+      "assets": [
+        {
+          "name": "Rabbisir-0.6.11-19.zip",
+          "url": "https://github.com/Rabbisir/Rabbisir-Releases/releases/download/v0.6.11/Rabbisir-0.6.11-19.zip",
+          "size": 137141542,
+          "sha256": "99c991746dc5bc1de83d6277964caa550a6b44d87876d1d23577d642e84aa095"
+        },
+        {
+          "name": "Rabbisir-0.6.11-19.dmg",
+          "url": "https://github.com/Rabbisir/Rabbisir-Releases/releases/download/v0.6.11/Rabbisir-0.6.11-19.dmg",
+          "size": 99975572,
+          "sha256": "5d394ff94d7f1848e060855a3c707432ee663ff4ea71cd3d068487740e0125ac"
+        },
+        {
+          "name": "Rabbisir.dmg",
+          "url": "https://github.com/Rabbisir/Rabbisir-Releases/releases/download/v0.6.11/Rabbisir.dmg",
+          "size": 99975572,
+          "sha256": "5d394ff94d7f1848e060855a3c707432ee663ff4ea71cd3d068487740e0125ac"
+        }
+      ]
+    },
     {
       "version": "0.6.10",
       "build": "18",
