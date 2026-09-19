@@ -2,18 +2,63 @@
   "$schema": "./official-app-releases.schema.json",
   "schemaVersion": 2,
   "channel": "production",
-  "updatedAt": "2026-09-17T00:00:00Z",
+  "updatedAt": "2026-09-19T00:00:00Z",
   "authority": {
     "repository": "Rabbisir/Rabbisir-Releases",
     "appcastURL": "https://raw.githubusercontent.com/Rabbisir/Rabbisir-Releases/main/appcast.xml",
     "stableDownloadURL": "https://github.com/Rabbisir/Rabbisir-Releases/releases/latest/download/Rabbisir.dmg"
   },
   "latest": {
-    "version": "0.6.11",
-    "build": "19",
-    "tag": "v0.6.11"
+    "version": "0.6.12",
+    "build": "20",
+    "tag": "v0.6.12"
   },
   "releases": [
+    {
+      "version": "0.6.12",
+      "build": "20",
+      "tag": "v0.6.12",
+      "publishedOn": "2026-09-19",
+      "selectedTypes": [
+        "optimization",
+        "fix"
+      ],
+      "categories": {
+        "optimization": [
+          {
+            "zh": "强化模型运行时安全准入、工具身份隔离及历史与重连状态一致性，提升既有对话和产物链路的稳定性。",
+            "en": "Hardens model-runtime admission, per-tool identity isolation, and history/reconnect consistency for more reliable conversation and artifact flows."
+          }
+        ],
+        "fix": [
+          {
+            "zh": "修复旧版 rc.2 完成消息误判、工具结果错误成功、会话权限残留、预设依赖失效及非文本区域 Escape 无法取消等问题。",
+            "en": "Fixes legacy rc.2 final-message handling, false tool success, stale session authority, missing preset dependencies, and Escape cancellation outside text fields."
+          }
+        ]
+      },
+      "releaseURL": "https://github.com/Rabbisir/Rabbisir-Releases/releases/tag/v0.6.12",
+      "assets": [
+        {
+          "name": "Rabbisir-0.6.12-20.zip",
+          "url": "https://github.com/Rabbisir/Rabbisir-Releases/releases/download/v0.6.12/Rabbisir-0.6.12-20.zip",
+          "size": 104617946,
+          "sha256": "834b71780a4e1a7bfa0ae15ffb0d4c57cb9110c60a42f63f86c6bf502486581b"
+        },
+        {
+          "name": "Rabbisir-0.6.12-20.dmg",
+          "url": "https://github.com/Rabbisir/Rabbisir-Releases/releases/download/v0.6.12/Rabbisir-0.6.12-20.dmg",
+          "size": 87125651,
+          "sha256": "7ae93913f2e461877aac027e7b5e2cdb516f5b3408c63740bdaff910855480e1"
+        },
+        {
+          "name": "Rabbisir.dmg",
+          "url": "https://github.com/Rabbisir/Rabbisir-Releases/releases/download/v0.6.12/Rabbisir.dmg",
+          "size": 87125651,
+          "sha256": "7ae93913f2e461877aac027e7b5e2cdb516f5b3408c63740bdaff910855480e1"
+        }
+      ]
+    },
     {
       "version": "0.6.11",
       "build": "19",
