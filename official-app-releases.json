@@ -2,18 +2,70 @@
   "$schema": "./official-app-releases.schema.json",
   "schemaVersion": 2,
   "channel": "production",
-  "updatedAt": "2026-09-19T00:00:00Z",
+  "updatedAt": "2026-09-20T00:00:00Z",
   "authority": {
     "repository": "Rabbisir/Rabbisir-Releases",
     "appcastURL": "https://raw.githubusercontent.com/Rabbisir/Rabbisir-Releases/main/appcast.xml",
     "stableDownloadURL": "https://github.com/Rabbisir/Rabbisir-Releases/releases/latest/download/Rabbisir.dmg"
   },
   "latest": {
-    "version": "0.6.12",
-    "build": "20",
-    "tag": "v0.6.12"
+    "version": "0.6.13",
+    "build": "21",
+    "tag": "v0.6.13"
   },
   "releases": [
+    {
+      "version": "0.6.13",
+      "build": "21",
+      "tag": "v0.6.13",
+      "publishedOn": "2026-09-20",
+      "selectedTypes": [
+        "feature",
+        "optimization",
+        "fix"
+      ],
+      "categories": {
+        "feature": [
+          {
+            "zh": "新增原生 Goal 控制和 MCP 状态展示，并提供可滚动的完整项目列表与独立项目 Dock。",
+            "en": "Adds native Goal controls and MCP status, plus a scrollable complete project list and a separate project Dock."
+          }
+        ],
+        "optimization": [
+          {
+            "zh": "优化会话投影、编辑器标签以及冷启动与重连状态收敛，提升既有工作流稳定性。",
+            "en": "Improves session projection, composer labels, and cold-start and reconnect convergence for steadier workflows."
+          }
+        ],
+        "fix": [
+          {
+            "zh": "修复恢复状态覆盖选择或草稿、隔离偏好污染，以及满额 Dock 替换现有项目等问题。",
+            "en": "Fixes recovery overwrites, isolated-preference leakage, and full-Dock replacement of existing projects."
+          }
+        ]
+      },
+      "releaseURL": "https://github.com/Rabbisir/Rabbisir-Releases/releases/tag/v0.6.13",
+      "assets": [
+        {
+          "name": "Rabbisir-0.6.13-21.zip",
+          "url": "https://github.com/Rabbisir/Rabbisir-Releases/releases/download/v0.6.13/Rabbisir-0.6.13-21.zip",
+          "size": 104724799,
+          "sha256": "3388227345aef455e1ce40ef1607ab675f36d71eea5b1c00370cc19c9e54f3f8"
+        },
+        {
+          "name": "Rabbisir-0.6.13-21.dmg",
+          "url": "https://github.com/Rabbisir/Rabbisir-Releases/releases/download/v0.6.13/Rabbisir-0.6.13-21.dmg",
+          "size": 87233679,
+          "sha256": "2ee684cebcc69a0852597f3b50129d67c4b45aa5e9fd295ae3a7ef952aeca97e"
+        },
+        {
+          "name": "Rabbisir.dmg",
+          "url": "https://github.com/Rabbisir/Rabbisir-Releases/releases/download/v0.6.13/Rabbisir.dmg",
+          "size": 87233679,
+          "sha256": "2ee684cebcc69a0852597f3b50129d67c4b45aa5e9fd295ae3a7ef952aeca97e"
+        }
+      ]
+    },
     {
       "version": "0.6.12",
       "build": "20",
