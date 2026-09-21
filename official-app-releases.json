@@ -2,18 +2,63 @@
   "$schema": "./official-app-releases.schema.json",
   "schemaVersion": 2,
   "channel": "production",
-  "updatedAt": "2026-09-20T00:00:00Z",
+  "updatedAt": "2026-09-21T00:00:00Z",
   "authority": {
     "repository": "Rabbisir/Rabbisir-Releases",
     "appcastURL": "https://raw.githubusercontent.com/Rabbisir/Rabbisir-Releases/main/appcast.xml",
     "stableDownloadURL": "https://github.com/Rabbisir/Rabbisir-Releases/releases/latest/download/Rabbisir.dmg"
   },
   "latest": {
-    "version": "0.6.13",
-    "build": "21",
-    "tag": "v0.6.13"
+    "version": "0.6.14",
+    "build": "22",
+    "tag": "v0.6.14"
   },
   "releases": [
+    {
+      "version": "0.6.14",
+      "build": "22",
+      "tag": "v0.6.14",
+      "publishedOn": "2026-09-21",
+      "selectedTypes": [
+        "feature",
+        "fix"
+      ],
+      "categories": {
+        "feature": [
+          {
+            "zh": "新增本地图片选择和 Finder 拖入，可预览、移除，并仅向支持图片的模型发送。",
+            "en": "Adds local image picking and Finder drop with previews, removal, and sending only to image-capable models."
+          }
+        ],
+        "fix": [
+          {
+            "zh": "修复异常图片准入、重试取消与会话归属，以及退出和冷启动后的图文草稿恢复。",
+            "en": "Fixes unsafe image admission, retry and cancellation ownership, and text-image draft recovery after quit or cold launch."
+          }
+        ]
+      },
+      "releaseURL": "https://github.com/Rabbisir/Rabbisir-Releases/releases/tag/v0.6.14",
+      "assets": [
+        {
+          "name": "Rabbisir-0.6.14-22.zip",
+          "url": "https://github.com/Rabbisir/Rabbisir-Releases/releases/download/v0.6.14/Rabbisir-0.6.14-22.zip",
+          "size": 104801688,
+          "sha256": "596ae737447697aafe04154f3f3fe8392b31b7eba3c104529b10d9974bd9cacd"
+        },
+        {
+          "name": "Rabbisir-0.6.14-22.dmg",
+          "url": "https://github.com/Rabbisir/Rabbisir-Releases/releases/download/v0.6.14/Rabbisir-0.6.14-22.dmg",
+          "size": 87310180,
+          "sha256": "1dde2031daaf13e07e47ab04beb7dca64c4aee4a7698b54a80b0ee2441e64863"
+        },
+        {
+          "name": "Rabbisir.dmg",
+          "url": "https://github.com/Rabbisir/Rabbisir-Releases/releases/download/v0.6.14/Rabbisir.dmg",
+          "size": 87310180,
+          "sha256": "1dde2031daaf13e07e47ab04beb7dca64c4aee4a7698b54a80b0ee2441e64863"
+        }
+      ]
+    },
     {
       "version": "0.6.13",
       "build": "21",
